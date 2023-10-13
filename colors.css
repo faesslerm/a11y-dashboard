@@ -1,0 +1,224 @@
+:root {
+    /* Primary */
+    --portal-color-primary: var(--portal-color-primary-60pct);
+    --portal-color-primary-text: var(--portal-color-primary-70pct);
+    --portal-color-primary-80pct: #003666;
+    --portal-color-primary-70pct: #005199;
+    --portal-color-primary-60pct: #006DCC;
+    --portal-color-primary-50pct: #0088FF;
+    --portal-color-primary-40pct: #33A0FF;
+    --portal-color-primary-30pct: #66B7FF;
+    --portal-color-primary-20pct: #99CFFF;
+    --portal-color-primary-10pct: #CCE7FF;
+    --portal-color-primary-05pct: #E5F3FF;
+
+    /* Error */
+    --portal-color-error: var(--portal-color-error-60pct);
+    --portal-color-error-text: var(--portal-color-error-70pct);
+    --portal-color-error-80pct: #660500;
+    --portal-color-error-70pct: #990800;
+    --portal-color-error-60pct: #CC0B00;
+    --portal-color-error-50pct: #FF0D00;
+    --portal-color-error-40pct: #FF3E33;
+    --portal-color-error-30pct: #FF6E66;
+    --portal-color-error-20pct: #FF9E99;
+    --portal-color-error-10pct: #FFCFCC;
+    --portal-color-error-05pct: #FFE7E5;
+
+    /* Success */
+    --portal-color-success: var(--portal-color-success-60pct);
+    --portal-color-success-text: var(--portal-color-success-70pct);
+    --portal-color-success-80pct: #194D22;
+    --portal-color-success-70pct: #267333;
+    --portal-color-success-60pct: #339944;
+    --portal-color-success-50pct: #40BF55;
+    --portal-color-success-40pct: #66CC77;
+    --portal-color-success-30pct: #8CD999;
+    --portal-color-success-20pct: #B3E5BB;
+    --portal-color-success-10pct: #D9F2DD;
+    --portal-color-success-05pct: #ECF9EE;
+
+    /* Warning */
+    --portal-color-warning: var(--portal-color-warning-50pct);
+    --portal-color-warning-text: var(--portal-color-warning-60pct);
+    --portal-color-warning-80pct: #663000;
+    --portal-color-warning-75pct: var(--portal-color-warning-70pct);
+    --portal-color-warning-70pct: #994900;
+    --portal-color-warning-60pct: #CC5F00;
+    --portal-color-warning-50pct: #FF7900;
+    --portal-color-warning-40pct: #FF9433;
+    --portal-color-warning-30pct: #FFAF66;
+    --portal-color-warning-20pct: #FFC999;
+    --portal-color-warning-10pct: #FFE4CC;
+    --portal-color-warning-05pct: #FFF2E5;
+
+    /* Shades */
+    --portal-color-black: #000;
+    --portal-color-shade: #0C0D0E;
+    --portal-color-shade-90pct: #181A1B;
+    --portal-color-shade-80pct: #303336;
+    --portal-color-shade-70pct: #484C51;
+    --portal-color-shade-60pct: #60656C;
+    --portal-color-shade-50pct: #787E87;
+    --portal-color-shade-40pct: #93989F;
+    --portal-color-shade-30pct: #AEB2B7;
+    --portal-color-shade-20pct: #C9CCCF;
+    --portal-color-shade-10pct: #E4E5E7;
+    --portal-color-shade-05pct: #F1F2F3;
+    --portal-color-shade-03pct: #F7F7F8;
+    --portal-color-base: #FFFFFF;
+
+    /* Brown */
+    --portal-color-brown: var(--portal-color-brown-60pct);
+    --portal-color-brown-text: var(--portal-color-brown-80pct);
+    --portal-color-brown-80pct: #373330;
+    --portal-color-brown-75pct: var(--portal-color-brown-70pct);
+    --portal-color-brown-70pct: #524C47;
+    --portal-color-brown-60pct: #6D655F;
+    --portal-color-brown-50pct: #887E77;
+    --portal-color-brown-40pct: #A09892;
+    --portal-color-brown-30pct: #B8B2AD;
+    --portal-color-brown-20pct: #CFCCC9;
+    --portal-color-brown-10pct: #E7E5E4;
+    --portal-color-brown-05pct: #F3F2F1;
+
+    /* Bright green */
+    --portal-color-bright-green: var(--portal-color-bright-green-60pct);
+    --portal-color-bright-green-text: var(--portal-color-bright-green-80pct);
+    --portal-color-bright-green-80pct: #315E08;
+    --portal-color-bright-green-75pct: var(--portal-color-bright-green-70pct);
+    --portal-color-bright-green-70pct: #4A8D0C;
+    --portal-color-bright-green-60pct: #62BC10;
+    --portal-color-bright-green-50pct: #7BEB14;
+    --portal-color-bright-green-40pct: #96EF44;
+    --portal-color-bright-green-30pct: #B0F372;
+    --portal-color-bright-green-20pct: #CAF7A1;
+    --portal-color-bright-green-10pct: #E5FBD0;
+    --portal-color-bright-green-05pct: #F2FDE8;
+
+    /* Dark green */
+    --portal-color-dark-green: var(--portal-color-dark-green-60pct);
+    --portal-color-dark-green-text: var(--portal-color-dark-green-80pct);
+    --portal-color-dark-green-80pct: #125438;
+    --portal-color-dark-green-75pct: var(--portal-color-dark-green-70pct);
+    --portal-color-dark-green-70pct: #1B7E54;
+    --portal-color-dark-green-60pct: #24A871;
+    --portal-color-dark-green-50pct: #2DD28D;
+    --portal-color-dark-green-40pct: #60DBA7;
+    --portal-color-dark-green-30pct: #81E4BA;
+    --portal-color-dark-green-20pct: #ABEDD1;
+    --portal-color-dark-green-10pct: #D5F6E8;
+    --portal-color-dark-green-05pct: #EAFBF4;
+
+    /* Turquoise */
+    --portal-color-turquoise: var(--portal-color-turquoise-60pct);
+    --portal-color-turquoise-text: var(--portal-color-turquoise-80pct);
+    --portal-color-turquoise-80pct: #164950;
+    --portal-color-turquoise-75pct: var(--portal-color-turquoise-70pct);
+    --portal-color-turquoise-70pct: #226E77;
+    --portal-color-turquoise-60pct: #2D939F;
+    --portal-color-turquoise-50pct: #38B8C7;
+    --portal-color-turquoise-40pct: #60C6D2;
+    --portal-color-turquoise-30pct: #88D4DD;
+    --portal-color-turquoise-20pct: #AFE2E9;
+    --portal-color-turquoise-10pct: #D7F1F4;
+    --portal-color-turquoise-05pct: #EBF8F9;
+
+    /* Dark blue */
+    --portal-color-dark-blue: var(--portal-color-dark-blue-60pct);
+    --portal-color-dark-blue-text: var(--portal-color-dark-blue-80pct);
+    --portal-color-dark-blue-80pct: #1F1551;
+    --portal-color-dark-blue-75pct: var(--portal-color-dark-blue-70pct);
+    --portal-color-dark-blue-70pct: #2E1F7A;
+    --portal-color-dark-blue-60pct: #2E1F7A;
+    --portal-color-dark-blue-50pct: #4D33CC;
+    --portal-color-dark-blue-40pct: #715CD6;
+    --portal-color-dark-blue-30pct: #9485E0;
+    --portal-color-dark-blue-20pct: #B8AEEA;
+    --portal-color-dark-blue-10pct: #DBD6F5;
+    --portal-color-dark-blue-05pct: #EDEAFA;
+
+    /* Purple */
+    --portal-color-purple: var(--portal-color-purple-60pct);
+    --portal-color-purple-text: var(--portal-color-purple-80pct);
+    --portal-color-purple-80pct: #3C1D49;
+    --portal-color-purple-75pct: var(--portal-color-purple-70pct);
+    --portal-color-purple-70pct: #5B2B6E;
+    --portal-color-purple-60pct: #793993;
+    --portal-color-purple-50pct: #9748B7;
+    --portal-color-purple-40pct: #AC6CC6;
+    --portal-color-purple-30pct: #C191D4;
+    --portal-color-purple-20pct: #D5B6E2;
+    --portal-color-purple-10pct: #EADAF1;
+    --portal-color-purple-05pct: #F4EDF8;
+
+    /* Fuchsia */
+    --portal-color-fuchsia: var(--portal-color-fuchsia-60pct);
+    --portal-color-fuchsia-text: var(--portal-color-fuchsia-80pct);
+    --portal-color-fuchsia-80pct: #4E1841;
+    --portal-color-fuchsia-75pct: var(--portal-color-fuchsia-70pct);
+    --portal-color-fuchsia-70pct: #742561;
+    --portal-color-fuchsia-60pct: #9B3182;
+    --portal-color-fuchsia-50pct: #C23DA2;
+    --portal-color-fuchsia-40pct: #CE64B5;
+    --portal-color-fuchsia-30pct: #DA8BC7;
+    --portal-color-fuchsia-20pct: #E7B1DA;
+    --portal-color-fuchsia-10pct: #F3D8EC;
+    --portal-color-fuchsia-05pct: #F9EBF6;
+
+    /* Pink */
+    --portal-color-pink: var(--portal-color-pink-60pct);
+    --portal-color-pink-text: var(--portal-color-pink-80pct);
+    --portal-color-pink-80pct: #55111F;
+    --portal-color-pink-75pct: var(--portal-color-pink-70pct);
+    --portal-color-pink-70pct: #7F1A2F;
+    --portal-color-pink-60pct: #AA223E;
+    --portal-color-pink-50pct: #D42B4E;
+    --portal-color-pink-40pct: #DD5571;
+    --portal-color-pink-30pct: #E58095;
+    --portal-color-pink-20pct: #EEAAB8;
+    --portal-color-pink-10pct: #F6D5DC;
+    --portal-color-pink-05pct: #FBEAED;
+
+    /* Dark red */
+    --portal-color-dark-red: var(--portal-color-dark-red-60pct);
+    --portal-color-dark-red-text: var(--portal-color-dark-red-80pct);
+    --portal-color-dark-red-80pct: #5C1B0A;
+    --portal-color-dark-red-75pct: var(--portal-color-dark-red-70pct);
+    --portal-color-dark-red-70pct: #892810;
+    --portal-color-dark-red-60pct: #B73615;
+    --portal-color-dark-red-50pct: #E5441B;
+    --portal-color-dark-red-40pct: #EA6948;
+    --portal-color-dark-red-30pct: #EF8E76;
+    --portal-color-dark-red-20pct: #F5B4A3;
+    --portal-color-dark-red-10pct: #FAD9D1;
+    --portal-color-dark-red-05pct: #FCECE8;
+
+    /* Orange */
+    --portal-color-orange: var(--portal-color-orange-60pct);
+    --portal-color-orange-text: var(--portal-color-orange-80pct);
+    --portal-color-orange-80pct: #623904;
+    --portal-color-orange-75pct: var(--portal-color-orange-70pct);
+    --portal-color-orange-70pct: #945605;
+    --portal-color-orange-60pct: #C57207;
+    --portal-color-orange-50pct: #F68F09;
+    --portal-color-orange-40pct: #F8A53A;
+    --portal-color-orange-30pct: #FABC6B;
+    --portal-color-orange-20pct: #FBD29D;
+    --portal-color-orange-10pct: #FDE9CE;
+    --portal-color-orange-05pct: #FEF4E6;
+
+    /* Gold */
+    --portal-color-gold: var(--portal-color-gold-60pct);
+    --portal-color-gold-text: var(--portal-color-gold-80pct);
+    --portal-color-gold-80pct: #654E01;
+    --portal-color-gold-75pct: var(--portal-color-gold-70pct);
+    --portal-color-gold-70pct: #987401;
+    --portal-color-gold-60pct: #CA9B02;
+    --portal-color-gold-50pct: #FDC202;
+    --portal-color-gold-40pct: #FDCE35;
+    --portal-color-gold-30pct: #FEDA67;
+    --portal-color-gold-20pct: #FEE79A;
+    --portal-color-gold-10pct: #F4EED8;
+    --portal-color-gold-05pct: #F9F6EB;
+}
