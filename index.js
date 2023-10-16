@@ -7,6 +7,7 @@ const links = [
     { href: "form.html", name: "Forms", icon: "fa-keyboard" },
     { href: "table.html", name: "Tables", icon: "fa-table" },
     { href: "alert.html", name: "Alerts", icon: "fa-bell" },
+    { href: "slider.html", name: "Slider", icon: "fa-sliders-h" },
 ];
 
 const createNavItem = (href, name, iconName) => {
