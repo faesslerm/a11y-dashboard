@@ -20,12 +20,12 @@
 <body>
     <div class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">A11Y Dashboard</a>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search">
+        <input class="form-control form-control-dark w-100" aria-label="Search" type="text" placeholder="Search">
     </div>
     <div class="container-fluid">
         <div class="row">
             <!-- Navigation Start -->
-            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="position-sticky pt-3">
                     <ul id="navigation" class="nav flex-column"></ul>
                 </div>
@@ -37,7 +37,9 @@
                 <div class="pt-3 pb-2 mb-3 border-bottom">
                     <h1>Table View</h1>
                 </div>
-                <input type="text" id="tableSearch" class="form-control" onkeyup="filterTable()" placeholder="Search for names..">
+                <label for="tableSearch" class="form-label">Search for names</label>
+                <input type="text" id="tableSearch" class="form-control" onkeyup="filterTable()"
+                    placeholder="Search for names..">
                 <table id="customTable" class="table table-striped">
                     <thead>
                         <tr>
