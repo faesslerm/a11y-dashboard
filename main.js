@@ -10,7 +10,7 @@ var server = http.createServer((req, res) => {
         contentType = 'text/html';
     }
 
-    const route = path.join(__dirname, 'public', req.url);
+    const route = path.join(__dirname, 'docs', req.url);
     fs.readFile(route)
         .then(content => {
             res.writeHead(200, { 'Content-Type': contentType });
