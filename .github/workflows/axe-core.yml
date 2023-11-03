@@ -22,5 +22,5 @@ jobs:
       - name: Run axe
         run: |
           npm install -g @axe-core/cli
-          npm install -g chromedriver --chromedriver_version=LATEST --chromedriver-force-download
+          npm install -g chromedriver@119 --chromedriver-force-download
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/index.html --exit
