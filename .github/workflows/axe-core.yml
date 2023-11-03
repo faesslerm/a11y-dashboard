@@ -15,12 +15,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          always-auth: true
           node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org
       - run: npm ci
-        env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run build --if-present
       - run: npm start & npx wait-on http://localhost:3000
       - name: Run axe
