@@ -16,7 +16,7 @@ const createNavItem = (href, name, iconName) => {
 
     const link = document.createElement("a");
     link.href = href;
-    link.classList.add("nav-link");
+    link.classList.add("nav-link", "link-dark");
 
     const icon = document.createElement("i");
     icon.classList.add("fa", iconName, "me-2");
