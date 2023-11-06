@@ -11,6 +11,8 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
+      - name: Print Chrome version
+        run: /usr/bin/google-chrome --version
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
