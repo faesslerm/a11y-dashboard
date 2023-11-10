@@ -9,6 +9,7 @@ const links = [
     { href: "table.html", name: "Tables", icon: "fa-table" },
     { href: "alert.html", name: "Alerts", icon: "fa-bell" },
     { href: "slider.html", name: "Slider", icon: "fa-sliders-h" },
+    { href: "avatar.html", name: "Avatar", icon: "fa-user" },
 ];
 
 const createNavItem = (href, name, iconName) => {
