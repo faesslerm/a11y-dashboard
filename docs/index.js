@@ -1,6 +1,7 @@
 const navigation = document.getElementById("navigation");
 const links = [
     { href: "index.html", name: "Dashboard", icon: "fa-tachometer-alt" },
+    { href: "blog.html", name: "Blog", icon: "fa-rss" },
     { href: "typography.html", name: "Typography", icon: "fa-font" },
     { href: "color.html", name: "Color", icon: "fa-palette" },
     { href: "sidepanel.html", name: "Sidepanel", icon: "fa-th" },
