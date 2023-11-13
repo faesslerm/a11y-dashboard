@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Dashboard</title>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">A11Y Dashboard</a>
+        <input class="form-control form-control-dark w-100" aria-label="Search" type="text" placeholder="Search">
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navigation Start -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3" style="top: 3rem;">
+                    <ul id="navigation" class="nav flex-column"></ul>
+                </div>
+            </nav>
+            <!-- Navigation End -->
+
+            <!-- Content Start -->
+            <main id="content" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="pt-3 pb-2 mb-3 border-bottom">
+                    <h1>Button View</h1>
+                </div>
+                <button class="btn btn-primary mb-3">Primary button</button>
+                <button class="btn btn-primary mb-3" aria-label="home"><i class="fa fa-home"></i></button>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Switch checkbox</label>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="#">Dropdown link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Dropdown link 2</a></li>
+                    </ul>
+                </div>
+            </main>
+            <!-- Content End -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
