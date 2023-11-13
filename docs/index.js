@@ -11,6 +11,7 @@ const links = [
     { href: "slider.html", name: "Slider", icon: "fa-sliders-h" },
     { href: "avatar.html", name: "Avatar", icon: "fa-user" },
     { href: "button.html", name: "Button", icon: "fa-toggle-on" },
+    { href: "progress.html", name: "Progress", icon: "fa-spinner" },
 ];
 
 const createNavItem = (href, name, iconName) => {
