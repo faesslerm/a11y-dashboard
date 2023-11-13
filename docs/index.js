@@ -10,6 +10,7 @@ const links = [
     { href: "alert.html", name: "Alerts", icon: "fa-bell" },
     { href: "slider.html", name: "Slider", icon: "fa-sliders-h" },
     { href: "avatar.html", name: "Avatar", icon: "fa-user" },
+    { href: "button.html", name: "Button", icon: "fa-toggle-on" },
 ];
 
 const createNavItem = (href, name, iconName) => {
