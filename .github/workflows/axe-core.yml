@@ -35,3 +35,4 @@ jobs:
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/avatar.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/button.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/progress.html --exit
+          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/badge.html --exit
