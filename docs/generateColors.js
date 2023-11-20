@@ -18,7 +18,7 @@ const invertColor = (hex, blackWhite = true) => {
         g = parseInt(hex.slice(2, 4), 16),
         b = parseInt(hex.slice(4, 6), 16);
     if (blackWhite) {
-        return (r * 0.299 + g * 0.587 + b * 0.114) > 186
+        return (r * 0.299 + g * 0.587 + b * 0.114) > 100
             ? '#000000'
             : '#FFFFFF';
     }
@@ -34,7 +34,8 @@ const invertColor = (hex, blackWhite = true) => {
 const generateChild = (name) => {
     const container = document.createElement("div");
     container.classList.add("col-md-4", "mb-3");
-    container.style.color = "#FFFFFF";
+    const fontColor = invertColor(getComputedStyle(document.documentElement).getPropertyValue(`--portal-color-${name}-60pct`));
+    container.style.color = fontColor;
 
     const header = document.createElement("div");
     header.classList.add("p-3", "mb-2", "position-relative");
