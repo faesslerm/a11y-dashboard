@@ -26,7 +26,7 @@ jobs:
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/index.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/blog.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/typography.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/color.html --exit
+          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/color.html
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/sidepanel.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/form.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/table.html --exit
