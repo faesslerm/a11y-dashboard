@@ -12,6 +12,7 @@ const links = [
     { href: "avatar.html", name: "Avatar", icon: "fa-user" },
     { href: "button.html", name: "Button", icon: "fa-toggle-on" },
     { href: "progress.html", name: "Progress", icon: "fa-spinner" },
+    { href: "badge.html", name: "Badge", icon: "fa-certificate" },
 ];
 
 const createNavItem = (href, name, iconName) => {
