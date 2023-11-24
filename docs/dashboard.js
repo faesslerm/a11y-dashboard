@@ -4,6 +4,9 @@ const tableData = table.getElementsByTagName("tbody")[0];
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
 const address = document.getElementById("address");
+const inputFirstName = document.getElementById("inputFirstName");
+const inputLastName = document.getElementById("inputLastName");
+const inputAddress = document.getElementById("inputAddress");
 
 const cellClickListener = (event) => {
   const cells = event.target.parentElement.getElementsByTagName("td");
@@ -46,6 +49,6 @@ const addUserToTable = user => {
 
 const saveUserBtn = document.getElementById("saveUser");
 saveUserBtn.addEventListener("click", event => {
-  console.log("save user clicked");
-  addUserToTable({ firstName: "Sup", lastName: "Blo", address: "Street 1" });
+  const user = { firstName: inputFirstName.value, lastName: inputLastName.value, address: inputAddress.value };
+  addUserToTable(user);
 });
