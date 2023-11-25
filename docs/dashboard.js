@@ -5,8 +5,11 @@ const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
 const address = document.getElementById("address");
 const inputFirstName = document.getElementById("inputFirstName");
+const helpFirstName = document.getElementById("firstNameHelp");
 const inputLastName = document.getElementById("inputLastName");
+const helpLastName = document.getElementById("lastNameHelp");
 const inputAddress = document.getElementById("inputAddress");
+const helpAddress = document.getElementById("addressHelp");
 
 const cellClickListener = (event) => {
   const cells = event.target.parentElement.getElementsByTagName("td");
@@ -47,8 +50,28 @@ const addUserToTable = user => {
   tableData.appendChild(row);
 };
 
+const validateUserInputs = (formInput, helpMessage) => {
+  if (formInput.value.length < 3 || formInput.value.length > 20) {
+    formInput.classList.add("is-invalid");
+    helpMessage.classList.add("invalid-feedback");
+    helpMessage.innerText = "Must be between 3 and 20 characters long!";
+    return false;
+  } else {
+    formInput.classList.replace("is-invalid", "is-valid");
+    helpMessage.classList.replace("invalid-feedback", "valid-feedback");
+    helpMessage.innerText = "Looks good!";
+    return true;
+  }
+};
+
 const saveUserBtn = document.getElementById("saveUser");
 saveUserBtn.addEventListener("click", event => {
-  const user = { firstName: inputFirstName.value, lastName: inputLastName.value, address: inputAddress.value };
-  addUserToTable(user);
+  if (validateUserInputs(inputFirstName, helpFirstName)
+    && validateUserInputs(inputLastName, helpLastName)
+    && validateUserInputs(inputAddress, helpAddress)) {
+    const user = { firstName: inputFirstName.value, lastName: inputLastName.value, address: inputAddress.value };
+    addUserToTable(user);
+  } else {
+    console.log("Validation failed!");
+  }
 });
