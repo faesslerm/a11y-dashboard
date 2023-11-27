@@ -34,28 +34,34 @@ const deleteUserListener = (event) => {
   }
 };
 
+const createRowData = (text) => {
+  const rowData = document.createElement("td");
+  rowData.classList.add("pointer");
+  rowData.setAttribute("data-bs-toggle", "offcanvas");
+  rowData.setAttribute("data-bs-target", "#offcanvasWithBackdrop");
+  rowData.innerText = text;
+  return rowData;
+}
+
 const addUserToTable = user => {
   const row = document.createElement("tr");
-  row.classList.add("pointer");
-  row.setAttribute("data-bs-toggle", "offcanvas");
-  row.setAttribute("data-bs-target", "#offcanvasWithBackdrop");
 
   const rowHead = document.createElement("th");
   rowHead.setAttribute("scope", "row");
+  rowHead.classList.add("pointer");
+  rowHead.setAttribute("data-bs-toggle", "offcanvas");
+  rowHead.setAttribute("data-bs-target", "#offcanvasWithBackdrop");
   rowHead.innerText = Array.from(rows).length;
   row.appendChild(rowHead);
 
-  var rowData = document.createElement("td");
-  rowData.innerText = user.firstName;
+  var rowData = createRowData(user.firstName);
   row.appendChild(rowData);
-  rowData = document.createElement("td");
-  rowData.innerText = user.lastName;
+  rowData = createRowData(user.lastName);
   row.appendChild(rowData);
-  rowData = document.createElement("td");
-  rowData.innerText = user.address;
+  rowData = createRowData(user.address);
   row.appendChild(rowData);
-  rowData = document.createElement("td");
 
+  rowData = document.createElement("td");
   const deleteBtn = document.createElement("button");
   deleteBtn.setAttribute("type", "button");
   deleteBtn.setAttribute("aria-label", "delete user");
