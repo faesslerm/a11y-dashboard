@@ -46,26 +46,36 @@
                             <th scope="col">First</th>
                             <th scope="col">Last</th>
                             <th scope="col">Address</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Wilerstrasse 10</td>
+                        <tr>
+                            <th scope="row" class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">1</th>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Mark</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Otto</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Wilerstrasse 10</td>
+                            <td>
+                                <button type="button" class="btn btn-danger deleteUser"><i class="fas fa-trash"></i></button>
+                            </td>
                         </tr>
-                        <tr class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Defourstrasse 3</td>
+                        <tr>
+                            <th scope="row" class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">2</th>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Jacob</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Thornton</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Defourstrasse 3</td>
+                            <td>
+                                <button type="button" class="btn btn-danger deleteUser"><i class="fas fa-trash"></i></button>
+                            </td>
                         </tr>
-                        <tr class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>Bird</td>
-                            <td>Abacus-Platz 1</td>
+                        <tr>
+                            <th scope="row" class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">3</th>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Larry</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Bird</td>
+                            <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Abacus-Platz 1</td>
+                            <td>
+                                <button type="button" class="btn btn-danger deleteUser"><i class="fas fa-trash"></i></button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -86,9 +96,11 @@
                 <!-- Sidepanel End -->
 
                 <!-- Dialog Start -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Add User
-                </button>
+                <div class="btn-group" role="group" aria-label="Grid Toolbar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add User
+                    </button>
+                </div>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
