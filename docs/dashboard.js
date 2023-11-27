@@ -99,6 +99,8 @@ saveUserBtn.addEventListener("click", event => {
     && validateUserInputs(inputAddress, helpAddress)) {
     const user = { firstName: inputFirstName.value, lastName: inputLastName.value, address: inputAddress.value };
     addUserToTable(user);
+    const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+    modal.hide();
   } else {
     console.log("Validation failed!");
   }
