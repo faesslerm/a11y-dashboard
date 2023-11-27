@@ -10,6 +10,8 @@ const inputLastName = document.getElementById("inputLastName");
 const helpLastName = document.getElementById("lastNameHelp");
 const inputAddress = document.getElementById("inputAddress");
 const helpAddress = document.getElementById("addressHelp");
+const inputAge = document.getElementById("inputAge");
+const ageBadge = document.getElementById("ageBadge");
 
 const cellClickListener = (event) => {
   const cells = event.target.parentElement.getElementsByTagName("td");
@@ -108,4 +110,8 @@ saveUserBtn.addEventListener("click", event => {
 
 Array.from(document.getElementsByClassName("deleteUser")).forEach(btn => {
   btn.addEventListener("click", deleteUserListener);
+});
+
+inputAge.addEventListener("change", event => {
+  ageBadge.textContent = inputAge.value;
 });
