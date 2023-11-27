@@ -75,3 +75,16 @@ saveUserBtn.addEventListener("click", event => {
     console.log("Validation failed!");
   }
 });
+
+Array.from(document.getElementsByClassName("deleteUser")).forEach(btn => {
+  btn.addEventListener("click", event => {
+    event.stopPropagation();
+    const target = event.target.parentElement;
+    console.log(target.tagName);
+    if (target.tagName.toLowerCase() === "button") {
+      target.parentElement.parentElement.remove();
+    } else {
+      target.parentElement.remove();
+    }
+  });
+});
