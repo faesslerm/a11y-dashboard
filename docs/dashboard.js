@@ -24,6 +24,16 @@ Array.from(rows).forEach((row, index) => {
   }
 });
 
+const deleteUserListener = (event) => {
+  event.stopImmediatePropagation();
+  const target = event.target.parentElement;
+  if (target.tagName.toLowerCase() === "button") {
+    target.parentElement.parentElement.remove();
+  } else {
+    target.parentElement.remove();
+  }
+};
+
 const addUserToTable = user => {
   const row = document.createElement("tr");
   row.classList.add("pointer");
@@ -43,6 +53,18 @@ const addUserToTable = user => {
   row.appendChild(rowData);
   rowData = document.createElement("td");
   rowData.innerText = user.address;
+  row.appendChild(rowData);
+  rowData = document.createElement("td");
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.setAttribute("type", "button");
+  deleteBtn.setAttribute("aria-label", "delete user");
+  deleteBtn.classList.add("btn", "btn-danger", "deleteUser");
+  deleteBtn.addEventListener("click", deleteUserListener);
+  const icon = document.createElement("i");
+  icon.classList.add("fas", "fa-trash");
+  deleteBtn.appendChild(icon);
+  rowData.appendChild(deleteBtn);
   row.appendChild(rowData);
 
   row.addEventListener("click", cellClickListener);
@@ -77,14 +99,5 @@ saveUserBtn.addEventListener("click", event => {
 });
 
 Array.from(document.getElementsByClassName("deleteUser")).forEach(btn => {
-  btn.addEventListener("click", event => {
-    event.stopPropagation();
-    const target = event.target.parentElement;
-    console.log(target.tagName);
-    if (target.tagName.toLowerCase() === "button") {
-      target.parentElement.parentElement.remove();
-    } else {
-      target.parentElement.remove();
-    }
-  });
+  btn.addEventListener("click", deleteUserListener);
 });
