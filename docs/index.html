@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h5 class="mt-0 mb-1">Active Projects</h5>
+                                        <h5 class="mt-0 mb-1">Aktive Projekte</h5>
                                         <p class="mb-0">85</p>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h5 class="mt-0 mb-1">New Projects</h5>
+                                        <h5 class="mt-0 mb-1">Neue Projekte</h5>
                                         <p class="mb-0">11</p>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h5 class="mt-0 mb-1">Total Employees</h5>
+                                        <h5 class="mt-0 mb-1">Mitarbeiter</h5>
                                         <p class="mb-0">115</p>
                                     </div>
                                 </div>
@@ -105,9 +105,9 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Address</th>
+                            <th scope="col">Vorname</th>
+                            <th scope="col">Nachname</th>
+                            <th scope="col">Addresse</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -122,7 +122,7 @@
                             <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
                                 Wilerstrasse 10</td>
                             <td>
-                                <button type="button" class="btn btn-danger deleteUser"><i
+                                <button type="button" class="btn btn-danger deleteUser" aria-label="Löschen"><i
                                         class="fas fa-trash"></i></button>
                             </td>
                         </tr>
@@ -136,7 +136,7 @@
                             <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
                                 Defourstrasse 3</td>
                             <td>
-                                <button type="button" class="btn btn-danger deleteUser"><i
+                                <button type="button" class="btn btn-danger deleteUser" aria-label="Löschen"><i
                                         class="fas fa-trash"></i></button>
                             </td>
                         </tr>
@@ -150,7 +150,7 @@
                             <td class="pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">
                                 Abacus-Platz 1</td>
                             <td>
-                                <button type="button" class="btn btn-danger deleteUser"><i
+                                <button type="button" class="btn btn-danger deleteUser" aria-label="Löschen"><i
                                         class="fas fa-trash"></i></button>
                             </td>
                         </tr>
@@ -161,12 +161,12 @@
                 <!-- Sidepanel Start -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">User Details</h5>
+                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Benutzer Details</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <p id="firstName">Firstname: Max</p>
-                        <p id="lastName">Lastname: Muster</p>
+                        <p id="firstName">Vorname: Max</p>
+                        <p id="lastName">Nachname: Muster</p>
                         <p id="address">Strasse: Musterstrasse 6</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                 <!-- Dialog Start -->
                 <div class="btn-group" role="group" aria-label="Grid Toolbar">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Add User
+                        Benutzer hinzufügen
                     </button>
                 </div>
 
@@ -184,48 +184,51 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Create User</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Benutzer erstellen</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                    aria-label="Schliessen"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="inputFirstName" class="form-label">Firstname</label>
+                                        <label for="inputFirstName" class="form-label">Vorname</label>
                                         <input class="form-control" id="inputFirstName" aria-describedby="firstNameHelp"
                                             required>
-                                        <div id="firstNameHelp" class="form-text">Must be between 3 and 20 characters
-                                            long</div>
+                                        <div id="firstNameHelp" class="form-text">Muss zwischen 3 und 20 Zeichen lang
+                                            sein</div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="inputLastName" class="form-label">Lastname</label>
+                                        <label for="inputLastName" class="form-label">Nachname</label>
                                         <input class="form-control" id="inputLastName" aria-describedby="lastNameHelp"
                                             required>
-                                        <div id="lastNameHelp" class="form-text">Must be between 3 and 20 characters
-                                            long</div>
+                                        <div id="lastNameHelp" class="form-text">Muss zwischen 3 und 20 Zeichen lang
+                                            sein</div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="inputAddress" class="form-label">Address</label>
+                                        <label for="inputAddress" class="form-label">Addresse</label>
                                         <input class="form-control" id="inputAddress" aria-describedby="addressHelp"
                                             required>
-                                        <div id="addressHelp" class="form-text">Must be between 3 and 20 characters
-                                            long</div>
+                                        <div id="addressHelp" class="form-text">Muss zwischen 3 und 20 Zeichen lang sein
+                                        </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="inputAge" class="form-label">Age <span id="ageBadge"
+                                        <label for="inputAge" class="form-label">Alter <span id="ageBadge"
                                                 class="badge rounded-pill bg-primary">99</span></label>
                                         <input type="range" class="form-range" min="18" max="100" step="1"
                                             id="inputAge">
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                                        <label class="form-check-label" for="exampleCheck1">Accept Agreement</label>
+                                        <label class="form-check-label" for="exampleCheck1">Vereinbarung
+                                            akzeptieren</label>
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button id="saveUser" type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Schliessen</button>
+                                <button id="saveUser" type="button" class="btn btn-primary">Änderungen
+                                    speichern</button>
                             </div>
                         </div>
                     </div>

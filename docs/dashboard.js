@@ -15,9 +15,9 @@ const ageBadge = document.getElementById("ageBadge");
 
 const cellClickListener = (event) => {
   const cells = event.target.parentElement.getElementsByTagName("td");
-  firstName.innerText = `Firstname: ${cells[0].innerHTML}`;
-  lastName.innerText = `Lastname: ${cells[1].innerHTML}`;
-  address.innerText = `Address: ${cells[2].innerHTML}`;
+  firstName.innerText = `Vorname: ${cells[0].innerHTML}`;
+  lastName.innerText = `Nachname: ${cells[1].innerHTML}`;
+  address.innerText = `Addresse: ${cells[2].innerHTML}`;
 };
 
 Array.from(rows).forEach((row, index) => {
@@ -84,12 +84,12 @@ const validateUserInputs = (formInput, helpMessage) => {
   if (formInput.value.length < 3 || formInput.value.length > 20) {
     formInput.classList.add("is-invalid");
     helpMessage.classList.add("invalid-feedback");
-    helpMessage.innerText = "Must be between 3 and 20 characters long!";
+    helpMessage.innerText = "Muss zwischen 3 und 20 Zeichen lang sein!";
     return false;
   } else {
     formInput.classList.replace("is-invalid", "is-valid");
     helpMessage.classList.replace("invalid-feedback", "valid-feedback");
-    helpMessage.innerText = "Looks good!";
+    helpMessage.innerText = "Sieht gut aus!";
     return true;
   }
 };
