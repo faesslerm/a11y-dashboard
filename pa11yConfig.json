@@ -3,5 +3,20 @@
       "chromeLaunchConfig": {
         "executablePath": "/usr/bin/google-chrome"
       }
-    }
+    },
+    "urls": [
+        "docs/index.html",
+        "docs/blog.html",
+        "docs/typography.html",
+        "docs/sidepanel.html",
+        "docs/form.html",
+        "docs/table.html",
+        "docs/alert.html",
+        "docs/slider.html",
+        "docs/avatar.html",
+        "docs/button.html",
+        "docs/progress.html",
+        "docs/badge.html",
+        "docs/card.html"
+    ]
   }

@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "pa11y-ci --config pa11yConfig.json docs/index.html"
+    "test": "pa11y-ci --config pa11yConfig.json"
   },
   "author": "",
   "license": "ISC",
