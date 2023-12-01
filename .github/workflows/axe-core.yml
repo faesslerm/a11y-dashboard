@@ -22,18 +22,17 @@ jobs:
       - name: Run axe
         run: |
           npm install -g @axe-core/cli
-          npm install -g chromedriver@118 --chromedriver-force-download
           axe http://localhost:3000/index.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/blog.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/typography.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/color.html
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/sidepanel.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/form.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/table.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/alert.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/slider.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/avatar.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/button.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/progress.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/badge.html --exit
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/card.html --exit
+          axe http://localhost:3000/blog.html --exit
+          axe http://localhost:3000/typography.html --exit
+          axe http://localhost:3000/color.html
+          axe http://localhost:3000/sidepanel.html --exit
+          axe http://localhost:3000/form.html --exit
+          axe http://localhost:3000/table.html --exit
+          axe http://localhost:3000/alert.html --exit
+          axe http://localhost:3000/slider.html --exit
+          axe http://localhost:3000/avatar.html --exit
+          axe http://localhost:3000/button.html --exit
+          axe http://localhost:3000/progress.html --exit
+          axe http://localhost:3000/badge.html --exit
+          axe http://localhost:3000/card.html --exit
