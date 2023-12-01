@@ -23,7 +23,7 @@ jobs:
         run: |
           npm install -g @axe-core/cli
           npm install -g chromedriver@118 --chromedriver-force-download
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/index.html --exit
+          axe --chromedriver-path /usr/bin/google-chrome http://localhost:3000/index.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/blog.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/typography.html --exit
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:3000/color.html
