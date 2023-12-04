@@ -37,7 +37,8 @@
                 <div class="pt-3 pb-2 mb-3 border-bottom">
                     <h1>Sidepanel View</h1>
                 </div>
-                <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">Show
+                <button class="btn btn-primary mb-3" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop">Show
                     Sidepanel</button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                     <div class="offcanvas-header">
@@ -47,6 +48,36 @@
                     </div>
                     <div class="offcanvas-body">
                         <p>Some information...</p>
+                    </div>
+                </div>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;button class="btn btn-primary mb-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"&gt;Show
+    Sidepanel&lt;/button&gt;
+&lt;div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop"&gt;
+    &lt;div class="offcanvas-header"&gt;
+        &lt;h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"&gt;Offcanvas with backdrop&lt;/h5&gt;
+        &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Schliessen">&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="offcanvas-body"&gt;
+        &lt;p&gt;Some information...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
