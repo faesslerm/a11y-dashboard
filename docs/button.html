@@ -43,7 +43,7 @@
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                     <label class="form-check-label" for="flexSwitchCheckChecked">Switch checkbox</label>
                 </div>
-                <div class="btn-group" role="group">
+                <div class="btn-group mb-3" role="group">
                     <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
@@ -52,6 +52,43 @@
                         <li><a class="dropdown-item" href="#">Dropdown link 1</a></li>
                         <li><a class="dropdown-item" href="#">Dropdown link 2</a></li>
                     </ul>
+                </div>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;button class="btn btn-primary mb-3">Primary button&lt;/button&gt;
+
+&lt;button class="btn btn-primary mb-3" aria-label="home"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;div class="form-check form-switch mb-3"&gt;
+    &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked&gt;
+    &lt;label class="form-check-label" for="flexSwitchCheckChecked">Switch checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="btn-group mb-3" role="group"&gt;
+    &lt;button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown" aria-expanded="false"&gt;
+        Dropdown
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu" aria-labelledby="btnGroupDrop1"&gt;
+        &lt;li>&lt;a class="dropdown-item" href="#">Dropdown link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li>&lt;a class="dropdown-item" href="#">Dropdown link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!-- Content End -->

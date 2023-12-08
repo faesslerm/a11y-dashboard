@@ -39,7 +39,7 @@
                 </div>
                 <h2>Sign up</h2>
                 <p>Create an account to have access to amazing features</p>
-                <form>
+                <form class="mb-3">
                     <div class="mb-3">
                         <label for="exampleInputUsername1" class="form-label">Username</label>
                         <input class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp" required>
@@ -47,7 +47,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" required>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            aria-describedby="passwordHelp" required>
                         <div id="passwordHelp" class="form-text">Must be at least 8 characters long and should contain
                             A-Z/a-z/0-9</div>
                     </div>
@@ -57,6 +58,44 @@
                     </div>
                     <button type="submit" class="btn btn-primary" id="exampleSubmit1">Submit</button>
                 </form>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;h2>Sign up&lt;/h2&gt;
+&lt;p>Create an account to have access to amazing features&lt;/p&gt;
+&lt;form class="mb-3"&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="exampleInputUsername1" class="form-label">Username&lt;/label&gt;
+        &lt;input class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp" required&gt;
+        &lt;div id="usernameHelp" class="form-text">Must be between 3 and 20 characters long&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="exampleInputPassword1" class="form-label">Password&lt;/label&gt;
+        &lt;input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" required&gt;
+        &lt;div id="passwordHelp" class="form-text">Must be at least 8 characters long and should contain
+            A-Z/a-z/0-9&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3 form-check"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="exampleCheck1" required&gt;
+        &lt;label class="form-check-label" for="exampleCheck1">Check me out&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary" id="exampleSubmit1">Submit&lt;/button&gt;
+&lt;/form>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <!-- Content End -->
         </div>

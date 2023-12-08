@@ -38,9 +38,31 @@
                     <h1>Progress View</h1>
                 </div>
                 <button id="startBtn" class="btn btn-primary mb-3">Start Progress</button>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="sample progress"></div>
-                  </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-label="sample progress"></div>
+                </div>
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;button id="startBtn" class="btn btn-primary mb-3"&gt;Start Progress&lt;/button&gt;
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="sample progress"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <!-- Content End -->
         </div>

@@ -21,6 +21,7 @@ btnError.addEventListener("click", event => {
 const createAlert = (alertType) => {
     const container = document.createElement("div");
     container.classList.add("alert", `alert-${alertType}`, "alert-dismissible", "fade", "show", "d-flex", "align-items-center");
+    container.setAttribute("role", "alert");
 
     const content = document.createElement("div");
     const icon = getIcon(alertType);

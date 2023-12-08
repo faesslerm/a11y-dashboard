@@ -37,9 +37,36 @@
                 <div class="pt-3 pb-2 mb-3 border-bottom">
                     <h1>Alert View</h1>
                 </div>
-                <button id="btnSuccess" class="btn btn-success">Show Success</button>
-                <button id="btnWarning" class="btn btn-warning">Show Warning</button>
-                <button id="btnError" class="btn btn-danger">Show Error</button>
+                <div class="mb-3">
+                    <button id="btnSuccess" class="btn btn-success">Show Success</button>
+                    <button id="btnWarning" class="btn btn-warning">Show Warning</button>
+                    <button id="btnError" class="btn btn-danger">Show Error</button>
+                </div>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;div class="alert alert-success d-flex alert-dismissible fade align-items-center" role="alert"&gt;
+    &lt;div&gt;
+        &lt;i class="fa-check-circle fa flex-shrink-0 me-2"&gt;&lt;/i&gt;
+        An example success alert with an icon
+    &lt;/div&gt;
+    &lt;button class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+&lt;/div&gt;
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <!-- Content End -->
         </div>

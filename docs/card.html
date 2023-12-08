@@ -37,7 +37,7 @@
                 <div class="pt-3 pb-2 mb-3 border-bottom">
                     <h1>Card View</h1>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-3" style="width: 18rem;">
                     <div class="d-flex p-3 justify-content-between">
                         <img src="https://github.com/mdo.png" alt="User" style="height: 5rem;">
                         <div>
@@ -53,6 +53,41 @@
                         <li class="list-group-item">User: Administrator</li>
                         <li class="list-group-item">E-Mail: foo.bar@abacus.ch</li>
                     </ul>
+                </div>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;div class="card mb-3" style="width: 18rem;"&gt;
+    &lt;div class="d-flex p-3 justify-content-between"&gt;
+        &lt;img src="https://github.com/mdo.png" alt="User" style="height: 5rem;"&gt;
+        &lt;div&gt;
+            &lt;span class="badge bg-primary">Employee&lt;/span&gt;&lt;br&gt;
+            &lt;span class="badge rounded-pill bg-secondary">Team-Leader&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h2 class="card-title">Card title&lt;/h2&gt;
+        &lt;p class="card-text">Some quick example text&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class="list-group list-group-flush"&gt;
+        &lt;li class="list-group-item">User: Administrator&lt;/li&gt;
+        &lt;li class="list-group-item">E-Mail: foo.bar@abacus.ch&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!-- Content End -->
