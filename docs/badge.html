@@ -39,13 +39,40 @@
                 </div>
                 <span class="badge bg-primary">New Badge</span>
                 <span class="badge rounded-pill bg-secondary">New Pill</span>
-                <button type="button" class="btn btn-primary position-relative">
+                <button type="button" class="btn btn-primary position-relative mb-3">
                     Inbox
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      99+
-                      <span class="visually-hidden">unread messages</span>
+                        99+
+                        <span class="visually-hidden">unread messages</span>
                     </span>
-                  </button>
+                </button>
+
+                <div class="accordion" id="codeSnippet">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Code Snippet
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#codeSnippet">
+                            <div class="accordion-body">
+                                <pre>
+&lt;span class="badge bg-primary">New Badge&lt;/span&gt;
+&lt;span class="badge rounded-pill bg-secondary">New Pill&lt;/span&gt;
+&lt;button type="button" class="btn btn-primary position-relative"&gt;
+    Inbox
+    &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
+        99+
+        &lt;span class="visually-hidden">unread messages&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/button&gt;
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <!-- Content End -->
         </div>
