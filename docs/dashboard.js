@@ -1,3 +1,5 @@
+const bootstrap = window.bootstrap;
+
 const table = document.getElementById("customTable");
 const rows = table.getElementsByTagName("tr");
 const tableData = table.getElementsByTagName("tbody")[0];
@@ -12,12 +14,14 @@ const inputAddress = document.getElementById("inputAddress");
 const helpAddress = document.getElementById("addressHelp");
 const inputAge = document.getElementById("inputAge");
 const ageBadge = document.getElementById("ageBadge");
+const bsOffcanvas = new bootstrap.Offcanvas('#offcanvasWithBackdrop');
 
 const cellClickListener = (event) => {
   const cells = event.target.parentElement.getElementsByTagName("td");
   firstName.innerText = `Vorname: ${cells[0].innerHTML}`;
   lastName.innerText = `Nachname: ${cells[1].innerHTML}`;
   address.innerText = `Addresse: ${cells[2].innerHTML}`;
+  bsOffcanvas.show();
 };
 
 Array.from(rows).forEach((row, index) => {
@@ -38,21 +42,17 @@ const deleteUserListener = (event) => {
 
 const createRowData = (text) => {
   const rowData = document.createElement("td");
-  rowData.classList.add("pointer");
-  rowData.setAttribute("data-bs-toggle", "offcanvas");
-  rowData.setAttribute("data-bs-target", "#offcanvasWithBackdrop");
   rowData.innerText = text;
   return rowData;
 }
 
 const addUserToTable = user => {
   const row = document.createElement("tr");
+  row.classList.add("pointer")
+  row.setAttribute("tabindex", 0);
 
   const rowHead = document.createElement("th");
   rowHead.setAttribute("scope", "row");
-  rowHead.classList.add("pointer");
-  rowHead.setAttribute("data-bs-toggle", "offcanvas");
-  rowHead.setAttribute("data-bs-target", "#offcanvasWithBackdrop");
   rowHead.innerText = Array.from(rows).length;
   row.appendChild(rowHead);
 
