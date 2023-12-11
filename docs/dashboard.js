@@ -27,6 +27,11 @@ const cellClickListener = (event) => {
 Array.from(rows).forEach((row, index) => {
   if (index !== 0) {
     row.addEventListener("click", cellClickListener);
+    row.addEventListener("keypress", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        cellClickListener(event);
+      }
+    });
   }
 });
 
@@ -76,6 +81,11 @@ const addUserToTable = user => {
   row.appendChild(rowData);
 
   row.addEventListener("click", cellClickListener);
+  row.addEventListener("keypress", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      cellClickListener(event);
+    }
+  });
 
   tableData.appendChild(row);
 };
