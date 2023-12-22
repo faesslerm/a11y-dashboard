@@ -14,6 +14,7 @@ const links = [
     { href: "progress.html", name: "Progress", icon: "fa-spinner" },
     { href: "badge.html", name: "Badge", icon: "fa-certificate" },
     { href: "card.html", name: "Card", icon: "fa-address-card" },
+    { href: "dev.html", name: "Dev", icon: "fa-vial" },
 ];
 
 const createNavItem = (href, name, iconName) => {
