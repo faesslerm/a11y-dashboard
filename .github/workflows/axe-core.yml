@@ -36,3 +36,4 @@ jobs:
           axe http://localhost:3000/progress.html --exit
           axe http://localhost:3000/badge.html --exit
           axe http://localhost:3000/card.html --exit
+          axe http://localhost:3000/dev.html --exit
